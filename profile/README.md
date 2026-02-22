@@ -44,16 +44,18 @@ v4: 구현 시작
 
 ```bash
 # 1. CLI 설치
-npm install -g @promptwiki/cli
+npm install -g pmpt-cli
 
-# 2. 프로젝트 초기화
-promptwiki init --repo https://github.com/your/repo
+# 2. 프로젝트 초기화 + 플래닝
+pmpt init
+pmpt plan
 
-# 3. AI와 작업하며 자동 버전 저장
-promptwiki watch
+# 3. AI와 작업하며 버전 저장
+pmpt save      # 수동 저장
+pmpt watch     # 자동 감지
 
-# 4. 완료 후 제출
-promptwiki submit
+# 4. 히스토리 확인
+pmpt history
 ```
 
 ## 링크
@@ -100,16 +102,18 @@ Not just prompt tips, but **version-by-version tracking from idea to completion*
 
 ```bash
 # 1. Install CLI
-npm install -g @promptwiki/cli
+npm install -g pmpt-cli
 
-# 2. Initialize project
-promptwiki init --repo https://github.com/your/repo
+# 2. Initialize project + planning
+pmpt init
+pmpt plan
 
-# 3. Auto-save versions while working with AI
-promptwiki watch
+# 3. Save versions while working with AI
+pmpt save      # Manual save
+pmpt watch     # Auto-detect
 
-# 4. Submit when done
-promptwiki submit
+# 4. View history
+pmpt history
 ```
 
 ## Links
