@@ -2,6 +2,8 @@
 
 # PromptWiki
 
+**5개 질문에 답하면, 바이브 코딩이 시작됩니다**
+
 **[한국어](#한국어) | [English](#english)**
 
 </div>
@@ -10,52 +12,52 @@
 
 # 한국어
 
-**AI와 함께 제품을 만드는 과정을 기록하고 공유하는 플랫폼**
+**AI와 함께 제품을 만드는 과정을 기록하고 공유하는 도구**
 
 > "완성된 프롬프트가 아닌, 진화하는 과정을 아카이브합니다"
 
 ## PromptWiki란?
 
-PromptWiki는 AI와 대화하며 제품을 개발하는 **전체 과정**을 Markdown으로 기록하고 공유하는 플랫폼입니다.
+PromptWiki는 AI와 대화하며 제품을 개발하는 **전체 과정**을 기록하고 공유하는 CLI 도구입니다.
 
 ```
-v1: 아이디어 스케치
+pmpt plan → 5개 질문 답변 → AI 프롬프트 자동 생성 → 클립보드 복사
     ↓
-v2: 기능 목록 정의
+AI와 대화하며 개발
     ↓
-v3: 기술 아키텍처
+pmpt save → 버전 저장
     ↓
-v4: 구현 시작
-    ↓
-...
+pmpt export → zip으로 공유
 ```
-
-단순한 프롬프트 팁이 아닌, **아이디어부터 완성까지의 여정**을 버전별로 추적합니다.
 
 ## 왜 PromptWiki인가?
 
 | | |
 |---|---|
-| **재현 가능** | Checkpoint + Git 커밋 해시로 누구나 동일하게 재현 |
-| **학습 방식** | "프롬프트 써라" → "이렇게 진화시켜라" |
-| **검증 가능** | 각 단계마다 체크포인트 기준 제공 |
+| **간단한 시작** | 5개 질문만 답하면 AI 프롬프트 자동 생성 |
+| **재현 가능** | export/import로 누구나 동일하게 재현 |
+| **학습 방식** | "프롬프트 써라" → "이 과정 따라해봐" |
 
 ## 사용법
 
 ```bash
-# 1. CLI 설치
+# 1. CLI 설치 (30초)
 npm install -g pmpt-cli
 
-# 2. 프로젝트 초기화 + 플래닝
+# 2. 프로젝트 시작
 pmpt init
-pmpt plan
+pmpt plan          # 5개 질문 → AI 프롬프트 생성
 
 # 3. AI와 작업하며 버전 저장
-pmpt save      # 수동 저장
-pmpt watch     # 자동 감지
+pmpt save          # 수동 저장
+pmpt watch         # 자동 감지
 
 # 4. 히스토리 확인
 pmpt history
+
+# 5. 공유하기
+pmpt export        # zip으로 내보내기
+pmpt import <zip>  # 다른 사람 프로젝트 가져오기
 ```
 
 ## 링크
@@ -63,57 +65,60 @@ pmpt history
 | | |
 |---|---|
 | **웹사이트** | [pmptwiki.com](https://pmptwiki.com) |
+| **npm** | [pmpt-cli](https://www.npmjs.com/package/pmpt-cli) |
 
 ---
 
 # English
 
-**A platform to document and share the process of building products with AI**
+**Answer 5 questions. Start vibe coding.**
+
+**A CLI tool to document and share the process of building products with AI**
 
 > "We archive the evolving process, not just the final prompts"
 
 ## What is PromptWiki?
 
-PromptWiki documents and shares the **entire journey** of developing products through AI conversations in Markdown.
+PromptWiki is a CLI tool that documents and shares the **entire journey** of developing products through AI conversations.
 
 ```
-v1: Idea Sketch
+pmpt plan → Answer 5 questions → Auto-generate AI prompt → Copy to clipboard
     ↓
-v2: Feature Definition
+Build with AI
     ↓
-v3: Technical Architecture
+pmpt save → Save version
     ↓
-v4: Implementation
-    ↓
-...
+pmpt export → Share as zip
 ```
-
-Not just prompt tips, but **version-by-version tracking from idea to completion**.
 
 ## Why PromptWiki?
 
 | | |
 |---|---|
-| **Reproducible** | Checkpoints + Git commit hashes for exact reproduction |
-| **Learning** | "Use this prompt" → "Evolve prompts like this" |
-| **Verifiable** | Checkpoint criteria at each stage |
+| **Easy Start** | Answer 5 questions, get AI prompt automatically |
+| **Reproducible** | Export/import for exact reproduction |
+| **Learning** | "Use this prompt" → "Follow this journey" |
 
 ## Usage
 
 ```bash
-# 1. Install CLI
+# 1. Install CLI (30 sec)
 npm install -g pmpt-cli
 
-# 2. Initialize project + planning
+# 2. Start project
 pmpt init
-pmpt plan
+pmpt plan          # 5 questions → AI prompt
 
 # 3. Save versions while working with AI
-pmpt save      # Manual save
-pmpt watch     # Auto-detect
+pmpt save          # Manual save
+pmpt watch         # Auto-detect
 
 # 4. View history
 pmpt history
+
+# 5. Share
+pmpt export        # Export as zip
+pmpt import <zip>  # Import someone's project
 ```
 
 ## Links
@@ -121,6 +126,7 @@ pmpt history
 | | |
 |---|---|
 | **Website** | [pmptwiki.com](https://pmptwiki.com) |
+| **npm** | [pmpt-cli](https://www.npmjs.com/package/pmpt-cli) |
 
 ---
 
