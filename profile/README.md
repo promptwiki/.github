@@ -1,10 +1,18 @@
+<div align="center">
+
 # PromptWiki
+
+**[한국어](#한국어) | [English](#english)**
+
+</div>
+
+---
+
+# 한국어
 
 **AI와 함께 제품을 만드는 과정을 기록하고 공유하는 플랫폼**
 
 > "완성된 프롬프트가 아닌, 진화하는 과정을 아카이브합니다"
-
----
 
 ## PromptWiki란?
 
@@ -24,8 +32,6 @@ v4: 구현 시작
 
 단순한 프롬프트 팁이 아닌, **아이디어부터 완성까지의 여정**을 버전별로 추적합니다.
 
----
-
 ## 왜 PromptWiki인가?
 
 ### 1. 재현 가능한 개발 과정
@@ -40,26 +46,18 @@ v4: 구현 시작
 ### 3. 검증 가능한 결과물
 각 단계마다 **체크포인트 기준**이 있어, 자신의 결과물이 올바른지 검증할 수 있습니다.
 
----
-
 ## 시작하기
 
-### CLI 설치
 ```bash
+# CLI 설치
 npm install -g @promptwiki/cli
-```
 
-### 프로젝트 초기화
-```bash
-# 현재 폴더에서 시작
+# 프로젝트 초기화
 promptwiki init
 
 # Git 저장소 연동 (커밋 해시 자동 기록)
 promptwiki init --repo https://github.com/your/repo
-```
 
-### 변경 추적
-```bash
 # 파일 변경 자동 감지 및 버전 저장
 promptwiki watch
 
@@ -67,11 +65,8 @@ promptwiki watch
 promptwiki history
 ```
 
----
-
 ## 기여하기
 
-### 프로젝트 제출
 AI와 함께 만든 프로젝트가 있다면 공유해주세요!
 
 1. [content](https://github.com/promptwiki/content) 레포를 Fork
@@ -79,28 +74,92 @@ AI와 함께 만든 프로젝트가 있다면 공유해주세요!
 3. 버전 파일들 추가 (`v001.md`, `v002.md`, ...)
 4. Pull Request 제출
 
-### 기여 가이드라인
-- 각 버전에 **왜** 그렇게 했는지 설명 포함
-- 가능하면 Checkpoint 기준 추가
-- 사용한 AI 모델 명시
-
----
-
-## 프로젝트 예시
-
-| 프로젝트 | 설명 | 버전 |
-|---------|------|------|
-| [고객 관리 SaaS](https://pmptwiki.com/ko/projects/sample-saas) | 아이디어부터 MVP까지 | 3 versions |
-
----
-
 ## 링크
 
-- **웹사이트**: [pmptwiki.com](https://pmptwiki.com)
-- **콘텐츠 기여**: [promptwiki/content](https://github.com/promptwiki/content)
+| | |
+|---|---|
+| **웹사이트** | [pmptwiki.com](https://pmptwiki.com) |
+| **콘텐츠 기여** | [promptwiki/content](https://github.com/promptwiki/content) |
+
+---
+
+# English
+
+**A platform to document and share the process of building products with AI**
+
+> "We archive the evolving process, not just the final prompts"
+
+## What is PromptWiki?
+
+PromptWiki is a platform for documenting and sharing the **entire journey** of developing products through AI conversations in Markdown.
+
+```
+v1: Idea Sketch
+    ↓
+v2: Feature Definition
+    ↓
+v3: Technical Architecture
+    ↓
+v4: Implementation
+    ↓
+...
+```
+
+Not just prompt tips, but **version-by-version tracking from idea to completion**.
+
+## Why PromptWiki?
+
+### 1. Reproducible Development Process
+Each version records **Checkpoints** and **Git commit hashes**, allowing anyone to follow the same steps and reproduce results.
+
+### 2. Learning for the AI Era
+Learn "how to evolve prompts" instead of "use this prompt":
+- Why this direction was chosen
+- What feedback was incorporated
+- What trial and error occurred
+
+### 3. Verifiable Outputs
+Each stage has **checkpoint criteria** to verify your work is on track.
+
+## Getting Started
+
+```bash
+# Install CLI
+npm install -g @promptwiki/cli
+
+# Initialize project
+promptwiki init
+
+# With Git integration (auto-record commit hashes)
+promptwiki init --repo https://github.com/your/repo
+
+# Watch for file changes and auto-save versions
+promptwiki watch
+
+# View saved history
+promptwiki history
+```
+
+## Contributing
+
+Have a project built with AI? Share it!
+
+1. Fork [content](https://github.com/promptwiki/content) repo
+2. Create `projects/your-project/` folder
+3. Add version files (`v001.md`, `v002.md`, ...)
+4. Submit a Pull Request
+
+## Links
+
+| | |
+|---|---|
+| **Website** | [pmptwiki.com](https://pmptwiki.com) |
+| **Contribute Content** | [promptwiki/content](https://github.com/promptwiki/content) |
 
 ---
 
 <p align="center">
+  <i>The process of building with AI is valuable in itself.</i>
+  <br>
   <i>AI와 함께 만드는 과정, 그 자체가 가치입니다.</i>
 </p>
