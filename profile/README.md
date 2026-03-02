@@ -4,9 +4,9 @@
 
 **Answer 5 questions. Start vibe coding.**
 
-A CLI tool to record and share your AI-driven product development journey.
+Record and share your AI-driven product development journey.
 
-[Website](https://pmptwiki.com) · [Docs](https://pmptwiki.com/docs) · [npm](https://www.npmjs.com/package/pmpt-cli)
+[Website](https://pmptwiki.com) · [Docs](https://pmptwiki.com/docs) · [Guide](https://pmptwiki.com/guide) · [npm](https://www.npmjs.com/package/pmpt-cli)
 
 </div>
 
@@ -19,9 +19,9 @@ pmptwiki records the **entire process** of building products with AI — not jus
 ```
 pmpt plan → Answer 5 questions → AI prompt auto-generated → Clipboard
     ↓
-Build with AI
+Build with AI (MCP auto-records everything)
     ↓
-pmpt save → Save version
+pmpt save → Save version with summary
     ↓
 pmpt publish → Share on pmptwiki.com
 ```
@@ -31,8 +31,10 @@ pmpt publish → Share on pmptwiki.com
 | | |
 |---|---|
 | **Easy Start** | Answer 5 questions, get an AI-ready prompt automatically |
+| **MCP Integration** | Connect to Claude Code / Cursor — AI handles save, plan, publish |
 | **Reproducible** | Clone any project and follow the same journey |
-| **Learn by Process** | Not "use this prompt" but "follow this journey" |
+| **Quality Scoring** | AI prompt, plan, version history, docs — all scored |
+| **Badge System** | Pioneer, Prolific, Active, Documented, and more |
 
 ## Quick Start
 
@@ -44,35 +46,38 @@ npm install -g pmpt-cli
 pmpt init
 pmpt plan              # 5 questions → AI prompt
 
-# Save versions while building with AI
-pmpt save              # Manual save
-pmpt watch             # Auto-detect changes
+# Connect AI tool (recommended)
+pmpt mcp-setup         # Auto-configure MCP for Claude Code / Cursor
 
-# View history
-pmpt history
+# Or save manually
+pmpt save              # Save with summary
 
 # Share with the world
 pmpt login             # Authenticate via GitHub
 pmpt publish           # Publish to pmptwiki.com
 
-# Explore others' projects
-pmpt browse            # Browse published projects
+# Explore & clone
+pmpt explore           # Browse published projects
 pmpt clone <slug>      # Clone a project
 ```
 
-## Export & Import
+## Features
 
-```bash
-pmpt export            # Export as .pmpt file
-pmpt import <file>     # Import from .pmpt file
-```
+- **22 CLI commands** + **12 MCP tools** for full AI-driven workflow
+- **Project detail pages** with AI prompt, plan, version history, quality score
+- **Hall of Fame** for graduated projects
+- **Related projects** linking across multi-repo setups
+- **Unlisted mode** for private-but-shareable projects
+- **i18n** — Full Korean/English support
 
 ## Links
 
 | | |
 |---|---|
 | **Website** | [pmptwiki.com](https://pmptwiki.com) |
+| **Explore** | [pmptwiki.com/explore](https://pmptwiki.com/explore) |
 | **Docs** | [pmptwiki.com/docs](https://pmptwiki.com/docs) |
+| **Guide** | [pmptwiki.com/guide](https://pmptwiki.com/guide) |
 | **npm** | [pmpt-cli](https://www.npmjs.com/package/pmpt-cli) |
 
 ---
